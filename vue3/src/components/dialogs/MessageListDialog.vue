@@ -52,7 +52,7 @@
                     >
 
                         <template v-slot:item.createdAt="{ value }">
-                            {{ DateTime.fromSeconds(value).toLocaleString(DateTime.DATETIME_MED) }}
+                            {{ formatDateTime(DateTime.fromSeconds(value)) }}
                         </template>
 
                         <template v-slot:item.type="{ value }">
